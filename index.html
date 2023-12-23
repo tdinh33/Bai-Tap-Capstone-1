@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <!-- font gg -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/sun.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/moon.css' rel='stylesheet'>
+
+
+  <!-- font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bs4 -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!-- slick carousel  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- FANCYBOX CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+  <!-- BS4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <!-- main CSS -->
+  <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+
+
+
+
+
+<body id="myBody">
+  <style>
+				
+    span.w3l-icon.-back span.fa {
+      position: static;
+      color: #e6ebff;
+    }
+
+    #w3lDemoBar.w3l-demo-bar {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9999;
+      padding: 40px 5px 10px;
+      padding-top: 70px;
+      background: #0D1326;
+      border-top-left-radius: 9px;
+      border-bottom-left-radius: 9px;
+    }
+
+    #w3lDemoBar.w3l-demo-bar a {
+      display: block;
+      color: #e6ebff;
+      text-decoration: none;
+      line-height: 24px;
+      opacity: .6;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    #w3lDemoBar.w3l-demo-bar span.w3l-icon {
+      display: block;
+    }
+
+    #w3lDemoBar.w3l-demo-bar a:hover {
+      opacity: 1;
+    }
+
+    #w3lDemoBar.w3l-demo-bar .w3l-icon svg {
+      color: #e6ebff;
+    }
+
+    #w3lDemoBar.w3l-demo-bar .responsive-icons {
+      margin-top: 30px;
+      border-top: 1px solid #41414d;
+      padding-top: 40px;
+    }
+
+    #w3lDemoBar.w3l-demo-bar .demo-btns {
+      border-top: 1px solid #41414d;
+      padding-top: 30px;
+    }
+
+    #w3lDemoBar.w3l-demo-bar .responsive-icons a span.fa {
+      font-size: 26px;
+    }
+
+    #w3lDemoBar.w3l-demo-bar .no-margin-bottom {
+      margin-bottom: 0;
+    }
+
+    .toggle-right-sidebar span {
+      background: #0D1326;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      color: #e6ebff;
+      border-radius: 50px;
+      font-size: 26px;
+      cursor: pointer;
+      opacity: .5;
+    }
+
+    .pull-right-demo-bar {
+      float: right;
+      position: fixed;
+      right: 0px;
+      top: 150px;
+      width: 90px;
+      z-index: 99999;
+      text-align: center;
+    }
+
+    /* ============================================================
+RIGHT SIDEBAR SECTION
+============================================================ */
+
+    #right-sidebar {
+      width: 90px;
+      position: fixed;
+      z-index: 1000;
+      right: 0px;
+      top: 0;
+      margin-top: 140px;
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+      -o-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+      overflow-y: auto;
+    }
+
+
+    /* ============================================================
+RIGHT SIDEBAR TOGGLE SECTION
+============================================================ */
+
+    .hide-right-bar-notifications {
+      margin-right: -300px !important;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+    }
+
+
+
+    @media (max-width: 992px) {
+      #w3lDemoBar.w3l-demo-bar a.desktop-mode {
+        display: none;
+
+      }
+    }
+
+    @media (max-width: 767px) {
+      #w3lDemoBar.w3l-demo-bar a.tablet-mode {
+        display: none;
+
+      }
+    }
+
+    @media (max-width: 568px) {
+      #w3lDemoBar.w3l-demo-bar a.mobile-mode {
+        display: none;
+      }
+
+      #w3lDemoBar.w3l-demo-bar .responsive-icons {
+        margin-top: 0px;
+        border-top: none;
+        padding-top: 0px;
+      }
+
+      #right-sidebar,
+      .pull-right-demo-bar {
+        width: 90px;
+      }
+
+      #w3lDemoBar.w3l-demo-bar .no-margin-bottom-mobile {
+        margin-bottom: 0;
+      }
+    }
+  </style>
+<div class="pull-right-demo-bar toggle-right-sidebar">
+  <span class="fa title-open-right-sidebar tooltipstered fa-angle-double-right"></span>
+</div>
+<div id="right-sidebar" class="right-sidebar-notifcations nav-collapse">
+  <div class="bs-example bs-example-tabs right-sidebar-tab-notification" data-example-id="togglable-tabs">
+
+    <div id="w3lDemoBar" class="w3l-demo-bar">
+      <div class="demo-btns">
+        <a href="https://w3layouts.com/?p=4763800000017171">
+          <span class="w3l-icon -back">
+            <span class="fa fa-arrow-left"></span>
+          </span>
+          <span class="w3l-text">Back</span>
+        </a>
+        <a href="https://w3layouts.com/?p=4763800000017171">
+          <span class="w3l-icon -download">
+            <span class="fa fa-download"></span>
+          </span>
+          <span class="w3l-text">Download</span>
+        </a>
+        <a href="https://w3layouts.com/checkout/?add-to-cart=4763800000017171" class="no-margin-bottom-mobile">
+          <span class="w3l-icon -buy">
+            <span class="fa fa-shopping-cart"></span>
+          </span>
+          <span class="w3l-text">Buy</span>
+        </a>
+      </div>
+      <!---<div class="responsive-icons">
+          <a href="#url" class="desktop-mode">
+              <span class="w3l-icon -desktop">
+                  <span class="fa fa-desktop"></span>
+              </span>
+          </a>
+          <a href="#url" class="tablet-mode">
+              <span class="w3l-icon -tablet">
+                  <span class="fa fa-tablet"></span>
+              </span>
+          </a>
+          <a href="#url" class="mobile-mode no-margin-bottom">
+              <span class="w3l-icon -mobile">
+                  <span class="fa fa-mobile"></span>
+              </span>
+          </a>
+      </div>-->
+    </div>
+    <div class="right-sidebar-panel-content animated fadeInRight" tabindex="5003" style="overflow: hidden; outline: none;">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <header>
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <i class="fa-regular fa-handshake"></i>
+        <span>Masterwork</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="capstoneNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Blog Posts</a>
+              <a class="dropdown-item" href="#">Landing Pge</a>
+              <a class="dropdown-item" href="#">404 Page</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <a class="search-search" href="#">
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        </a>
+        <form class="form-inline my-2 my-lg-0">
+          <div class="top-quote mr-lg-3 mt-lg-0 HeaderButton">
+            <a class="btn btn-outline-primary theme-button" href="#demourl">
+              Schedule a Demo</a>
+          </div>
+        </form>
+      </div>
+      <!-- <div style="width: 5px;" class="mx-auto py-3">
+        <button class="btn" id="switchButton" title="Click to switch theme" role="switch" checked onclick="switchThemeFunction()">
+          <i class="far fa-moon"></i>
+          <i class="far fa-sun"></i>
+        </button>
+      </div> -->
+
+      <div class="mobile-position DarkandLight">
+        <nav class="navigation">
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox">
+              <div class="mode-container">
+                <i class="gg-sun"></i>
+                <i class="gg-moon"></i>
+              </div>
+            </label>
+          </div>
+        </nav>
+      </div>
+
+
+
+    </nav>
+  </header>
+
+  <div class="w3l-index1">
+    <div class="content">
+      <style>
+        .content {
+
+          background: linear-gradient(to right, var(--bg-color), rgba(255, 255, 255, 0.92)),
+            url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/banner.jpg);
+          position: relative;
+          z-index: 1;
+          overflow: hidden;
+          background-repeat: no-repeat,
+            no-repeat,
+            no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+          background-size: cover;
+          display: grid;
+          align-items: center;
+          padding-top: 5rem;
+        }
+      </style>
+      <div class="container HomePageHeroHeader">
+        <div class="row align-items-center">
+          <div class="col-lg-6 content-left">
+            <h1><b>
+                We Execute Our Ideas From Start to Finish </b> </h1>
+            <p class="mt-3 mb-lg-5 mb-4">
+              Building a beautiful interactive business for startups and innovative companies. </p>
+            <a href="#url" class="btn btn-outline-primary theme-button" style="padding: 10px 35px;">Get Started</a>
+          </div>
+          <div class="col-lg-6 content-photo mt-lg-0 mt-5">
+            <img src="./img/main.png" class="img-fluid" alt="main image">
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 
+  <section class="w3l-index2 py-5">
+    <div class="container py-md-3 HPWCU">
+      <div class="header-section text-center mx-auto">
+        <h6 class="sub-title">
+          Why Choose Us      </h6>
+        <h3>
+          Tools for business startup to professional       </h3>
+        <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+          Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+      </div>
+      <div class="row bottom_grids text-center justify-content-center">
+  
+                    <div class="col-lg-4 col-md-6 mt-5">
+          <div class="s-block">
+            <a href="#service" class="d-block">
+              <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/s1.png" alt="" class="img-fluid">
+              <h3 class="my-3">
+                Interactive            </h3>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?            </p>
+            </a>
+          </div>
+        </div>
+        
+                    <div class="col-lg-4 col-md-6 mt-5">
+          <div class="s-block">
+            <a href="#service" class="d-block">
+              <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/s2.png" alt="" class="img-fluid">
+              <h3 class="my-3">
+                Business            </h3>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?            </p>
+            </a>
+          </div>
+        </div>
+        
+                    <div class="col-lg-4 mt-5">
+          <div class="s-block">
+            <a href="#service" class="d-block">
+              <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/s3.png" alt="" class="img-fluid">
+              <h3 class="my-3">
+                Inspiration            </h3>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?            </p>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section> -->
+
+  <section class="services section-inner">
+    <div class="container">
+      <div class="title">
+        <p class="textfirst"><b>WHY CHOOSE US </b></p>
+        <h2>Tools for business startup to <br> professional</h2>
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus
+          nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+      </div>
+      <div class="services__content">
+        <div class="services__item">
+          <img src="./img/s1.png" alt="">
+          <h3 class="my-3">Interactive</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae id rem delectus.!</p>
+        </div>
+        <div class="services__item">
+          <img src="./img/s2.png" alt="">
+          <h3 class="my-3">Business</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit animi a nesciunt </p>
+        </div>
+        <div class="services__item">
+          <img src="./img/s3.png" alt="">
+          <h3 class="my-3">Inspiration</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum eligendi vel sunt cum saepe facere.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="aboutUs section-inner">
+    <div class="container">
+      <div class="aboutUs__content">
+        <div class="aboutUs__left ">
+          <div class="aboutUs_item">
+            <div class="aboutUs__title">
+              <p> <b> ABOUT OUR COMPANY </b> </p>
+              <h2><b>The Best Choice For Your Successful Business! </b></h2>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est repellendus illum harum quam nihil totam
+            reprehenderit! Ut sed eveniet quos! Asperiores officia, repudiandae similique reiciendis, ab est magnam esse
+            nesciunt ea fuga facere voluptatem. </p>
+
+          <button class="btn-gradient">
+            Read More
+          </button>
+        </div>
+        <div class="aboutUs__right">
+          <a href="#">
+            <img src="./img/about.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="number">
+    <div class="number__content">
+      <div class="number__item">
+        <h6>Happy Customers</h6>
+        <p class="counter">10458</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed</p>
+      </div>
+      <div class="number__item">
+        <h6>Winning Awards</h6>
+        <p class="counter">890</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+      </div>
+      <div class="number__item">
+        <h6>Completed Projects</h6>
+        <p class="counter">5345</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="new-block">
+    <div class="container">
+      <div class="middle-section">
+        <div class="section-width">
+          <h2>
+            We are true to ourselves, and commit to always perform at our best. </h2>
+        </div>
+        <div class="link-list-menu">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, doloribus atque. Corrupti
+            exercitationem voluptatem ipsum iste consequuntur et vitae voluptas temporibus? Maxime dolores amet
+            voluptatum illo consequatur placeat fugit ducimus. </p>
+          <a href="#url" class="btn btn-light theme-button">
+            Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="PageFaq">
+    <div class="container">
+      <div class="title">
+        <p class="textfirst"><b>QUESTIONS AND ANSWERS </b></p>
+        <h2>General FAQs</h2>
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus
+          nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+      </div>
+      <div class="PageFaqs__content">
+        <div class="PageFaq__right">
+          <a href="#">
+            <img src="./img/women.jpg" alt="">
+          </a>
+        </div>
+        <div class="PageFaq__left ">
+          <div class="PageFaq_item">
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-expanded="false">
+                <p>There are many passages but the majority? </p>
+              </button>
+              <div class="dropdown-menu">
+                <p>Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente non assumenda, incidunt officiis eaque iste minima autem.</p>
+              </div>
+            </div>
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-lg dropdown-toggle" type="button"  data-toggle="dropdown"
+                aria-expanded="false">
+                <p>There are many passages but the majority? </p>
+              </button>
+              <div class="dropdown-menu">
+                <p>Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente non assumenda, incidunt officiis eaque iste minima autem.</p>
+              </div>
+            </div>
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-expanded="false">
+                <p>There are many passages but the majority? </p>
+              </button>
+              <div class="dropdown-menu">
+                <p>Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente non assumenda, incidunt officiis eaque iste minima autem.</p>
+              </div>
+            </div>
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-expanded="false">
+                <p>There are many passages but the majority? </p>
+              </button>
+              <div class="dropdown-menu">
+                <p>Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente non assumenda, incidunt officiis eaque iste minima autem.</p>
+              </div>
+            </div>
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-expanded="false">
+                <p>There are many passages but the majority? </p>
+              </button>
+              <div class="dropdown-menu">
+                <p>Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente non assumenda, incidunt officiis eaque iste minima autem.</p>
+              </div>
+            </div>
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-expanded="false">
+                <p>There are many passages but the majority? </p>
+              </button>
+              <div class="dropdown-menu">
+                <p>Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente non assumenda, incidunt officiis eaque iste minima autem.</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section> -->
+
+  <section class="PageFaq">
+    <div class="w3l-faq-block py-5">
+      <div class="container py-lg-5 HomePageFaq">
+        <div class="header-section text-center mx-auto">
+          <h6 class="sub-title">
+            Questions and Answers </h6>
+          <h3>
+            General FAQs </h3>
+          <p class="my-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus
+            nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam. </p>
+        </div>
+        <div class="row">
+          <div class="col-md-5 mt-5">
+            <div class="faq-image">
+              <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/women.jpg"
+                class="img-fluid shadow img-curve" alt="">
+            </div>
+          </div>
+          <div class="col-md-7 mt-5 pl-md-5">
+            <section class="w3l-faq" id="faq">
+              <div id="accordion">
+                <!-- The 1 -->
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link text-decoration-none" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        There are many passages but the majority?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur
+                      quae quasi fuga, ad
+                      corrupti libero omnis sapiente non assumenda, incidunt officiis eaque iste minima autem.
+                    </div>
+                  </div>
+                </div>
+                <!-- The 2 -->
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed text-decoration-none" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Sed ut perspiciatis unde omnis?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur
+                      quae quasi fuga, ad
+                      corrupti libero omnis sapiente non assumenda, incidunt officiis eaque iste minima autem.
+                    </div>
+                  </div>
+                </div>
+                <!-- The 3 -->
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed text-decoration-none" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        At vero eos iusto odio ducimus qui?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur
+                      quae quasi fuga, ad
+                      corrupti libero omnis sapiente non assumenda, incidunt officiis eaque iste minima autem.
+                    </div>
+                  </div>
+                </div>
+                <!-- The 4 -->
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed text-decoration-none" data-toggle="collapse"
+                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        We denounce with righteous?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                      Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur
+                      quae quasi fuga, ad
+                      corrupti libero omnis sapiente non assumenda, incidunt officiis eaque iste minima autem.
+                    </div>
+                  </div>
+                </div>
+                <!-- The 5 -->
+                <div class="card">
+                  <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed text-decoration-none" data-toggle="collapse"
+                        data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        perspiciatis unde omnis?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                      Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur
+                      quae quasi fuga, ad
+                      corrupti libero omnis sapiente non assumenda, incidunt officiis eaque iste minima autem.
+                    </div>
+                  </div>
+                </div>
+                <!-- The 6 -->
+                <div class="card">
+                  <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed text-decoration-none" data-toggle="collapse"
+                        data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        At vero eos iusto odio ducimus qui?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div class="card-body">
+                      Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur
+                      quae quasi fuga, ad
+                      corrupti libero omnis sapiente non assumenda, incidunt officiis eaque iste minima autem.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+
+  <section class="w3l-products py-5 mb-4" id="products">
+    <div class="container py-lg-3 HomepageProjects">
+      <div class="header-section text-center mx-auto">
+        <h6 class="sub-title">
+          Featured Cases </h6>
+        <h3>
+          Completed Projects </h3>
+        <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+          Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-10 mx-auto">
+          <!--Horizontal Tab-->
+          <div id="parentHorizontalTab" style="display: block; width: 100%; margin: 0px;">
+            <ul class="resp-tabs-list hor_1">
+              <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-0" role="tab"
+                style="background-color: rgb(245, 245, 245); border-color: rgb(193, 193, 193);">
+                Project One </li>
+              <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-1" role="tab"
+                style="background-color: rgb(245, 245, 245); border-color: rgb(193, 193, 193);">
+                Project Two </li>
+              <li class="resp-tab-item hor_1 resp-tab-active" aria-controls="hor_1_tab_item-2" role="tab"
+                style="background-color: white; border-color: rgb(193, 193, 193);">
+                Project Three </li>
+              <div class="clear"></div>
+            </ul>
+            <div class="resp-tabs-container hor_1" style="border-color: rgb(193, 193, 193);">
+              <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-0"
+                style="background: none rgb(245, 245, 245); border-color: rgb(193, 193, 193);"><span
+                  class="resp-arrow"></span>
+                Project One </h2>
+              <div class="products-content resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-0">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h3>
+                      Why a visual identity system is more memorable </h3>
+                    <p>
+                      Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla
+                      quibusdam repellendus. consequatur minus aliquam corrupti blanditiis, necessitatibus consectetur
+                      modi ipsum natus accusantium sit pariatur. </p>
+                    <a href="#url" class="btn btn-outline-primary theme-button mt-3">
+                      Know more</a>
+                  </div>
+                  <div class="col-md-6 mt-md-0 mt-5">
+                    <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b4.jpg"
+                      class="img-fluid img-curve" alt="project image">
+                  </div>
+                </div>
+              </div>
+              <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-1"
+                style="background-color: rgb(245, 245, 245); border-color: rgb(193, 193, 193);"><span
+                  class="resp-arrow"></span>
+                Project Two </h2>
+              <div class="products-content resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-1">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b5.jpg"
+                      class="img-fluid img-curve" alt="project image">
+                  </div>
+                  <div class="col-md-6 mt-md-0 mt-5">
+                    <h3>
+                      Make website that looks Lorem, ipsum dolor. </h3>
+                    <p>
+                      Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla
+                      quibusdam repellendus. consequatur minus aliquam corrupti blanditiis, necessitatibus consectetur
+                      modi ipsum natus accusantium sit pariatur. </p>
+                    <a href="#url" class="btn btn-outline-primary theme-button mt-3">
+                      Know more</a>
+                  </div>
+                </div>
+              </div>
+              <h2 class="resp-accordion hor_1 resp-tab-active" role="tab" aria-controls="hor_1_tab_item-2"
+                style="background-color: white; border-color: rgb(193, 193, 193);"><span class="resp-arrow"></span>
+                Project Three </h2>
+              <div class="products-content resp-tab-content hor_1 resp-tab-content-active"
+                aria-labelledby="hor_1_tab_item-2" style="display:block">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h3>
+                      Why a visual identity system is more memorable </h3>
+                    <p>
+                      Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla
+                      quibusdam repellendus. consequatur minus aliquam corrupti blanditiis, necessitatibus consectetur
+                      modi ipsum natus accusantium sit pariatur. </p>
+                    <a href="#url" class="btn btn-outline-primary theme-button mt-3">
+                      Know more</a>
+                  </div>
+                  <div class="col-md-6 mt-md-0 mt-5">
+                    <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b6.jpg"
+                      class="img-fluid img-curve" alt="project image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Initialize the Responsive Tabs plugin
+      $(document).ready(function () {
+        $('#parentHorizontalTab').responsiveTabs({
+          startCollapsed: 'accordion',
+          animation: 'slide'
+        });
+      });
+    </script>
+  </section>
+
+
+  <section class="carouselPort">
+    <!-- data-ride="carousel" -->
+    <!-- carousel-fade : hiệu ứng fade -->
+    <!-- <div id="carouselPortMain" class="carousel slide carousel-fade">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselPortMain" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselPortMain" data-slide-to="1"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+
+        </div>
+      </div> -->
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+
+          <div class="item-slider">
+            <div class="slider-info mt-lg-4 mt-3">
+              <div class="img-circle">
+                <img src="./img/team3.jpg" class="img-fluid testimonial-img" alt="client image">
+              </div>
+              <div class="message">
+                <span class="fa fa-quote-left" aria-hidden="true"></span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium
+                  doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente
+                  quaerat et. </p>
+                <div class="name mt-4">
+                  <h4>
+                    Isabella Mia </h4>
+                  <p>
+                    Company name </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="slider-info mt-lg-4 mt-3">
+              <div class="img-circle">
+                <img src="./img/team4.jpg" class="img-fluid testimonial-img" alt="client image">
+              </div>
+              <div class="message">
+                <span class="fa fa-quote-left" aria-hidden="true"></span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium
+                  doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente
+                  quaerat et. </p>
+                <div class="name mt-4">
+                  <h4>
+                    Isabella Mia </h4>
+                  <p>
+                    Company name </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="item-slider">
+            <div class="slider-info mt-lg-4 mt-3">
+              <div class="img-circle">
+                <img src="./img/team5.jpg" class="img-fluid testimonial-img" alt="client image">
+              </div>
+              <div class="message">
+                <span class="fa fa-quote-left" aria-hidden="true"></span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium
+                  doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente
+                  quaerat et. </p>
+                <div class="name mt-4">
+                  <h4>
+                    Isabella Mia </h4>
+                  <p>
+                    Company name </p>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="slider-info mt-lg-4 mt-3">
+              <div class="img-circle">
+                <img src="./img/team6.jpg" class="img-fluid testimonial-img" alt="client image">
+              </div>
+              <div class="message">
+                <span class="fa fa-quote-left" aria-hidden="true"></span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium
+                  doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente
+                  quaerat et. </p>
+                <div class="name mt-4">
+                  <h4>
+                    Isabella Mia </h4>
+                  <p>
+                    Company name </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- </div>
+
+    <button class="carousel-control-prev" type="button" data-target="#carouselPortMain" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselPortMain" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+    </div> -->
+
+  </section>
+
+
+
+
+
+  <!-- READY TO BUILD -->
+
+  <section class="w3l-index6 py-5">
+    <div class="container py-md-3 text-center HomePageCTA">
+      <div class="header-section text-center mx-auto">
+        <h3>Ready to build your own brand community? </h3>
+        <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla
+          mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+      </div>
+      <div class="buttons mt-5">
+        <a href="#url" role="button" class="btn btn-outline-primary mr-2 theme-button">
+          Book a Demo</a>
+        <a href="#url" role="button" class="btn btn-primary theme-button ml-2">
+          Get Started</a>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+  <footer>
+    <!-- footer -->
+    <section class="w3l-footer">
+      <div class="w3l-footer-16-main py-5">
+        <div class="container MasterFooter">
+          <div class="row">
+            <div class="col-lg-6 column">
+              <div class="row">
+                <div class="col-md-4 column">
+
+                  <div id="meta-2" class="widget_meta">
+                    <h3 class="">Meta</h3>
+                    <ul>
+                      <li><a href="https://wp.w3layouts.com/masterwork/wp-login.php">Log in</a></li>
+                      <li><a href="https://wp.w3layouts.com/masterwork/feed/">Entries feed</a></li>
+                      <li><a href="https://wp.w3layouts.com/masterwork/comments/feed/">Comments feed</a></li>
+
+                      <li><a href="https://wordpress.org/">WordPress.org</a></li>
+                    </ul>
+
+                  </div>
+                </div>
+                <div class="col-md-4 column mt-md-0 mt-4">
+
+                  <div id="categories-4" class="widget_categories">
+                    <h3 class="">Categories</h3>
+                    <ul>
+                      <li class="cat-item cat-item-2"><a
+                          href="https://wp.w3layouts.com/masterwork/category/business/">Business</a>
+                      </li>
+                      <li class="cat-item cat-item-3"><a
+                          href="https://wp.w3layouts.com/masterwork/category/design/">Design</a>
+                      </li>
+                      <li class="cat-item cat-item-4"><a
+                          href="https://wp.w3layouts.com/masterwork/category/industry/">Industry</a>
+                      </li>
+                      <li class="cat-item cat-item-5"><a
+                          href="https://wp.w3layouts.com/masterwork/category/programming/">Programming</a>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+                <div class="col-md-4 column mt-md-0 mt-4">
+                  <div id="archives-4" class="widget_archive">
+                    <h3 class="">Archives</h3>
+                    <ul>
+                      <li><a href="https://wp.w3layouts.com/masterwork/2021/03/">March 2021</a></li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12column pl-lg-5 column4 mt-lg-0 mt-(-1) FooterNewsletter">
+              <h3>Newsletter </h3>
+              <div class="end-column">
+                <h4>Get latest updates and offers.</h4>
+                <form action="" class="subscribe" method="post">
+                  <input type="email" name="email" placeholder="Email Address" required="">
+                  <button type="submit">Go</button>
+                </form>
+                <p>Sign up for our latest news &amp; articles. We won’t give you spam mails.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
+
+        <div class="columns text-lg-left text-center">
+          <p class="CopyRights">© 2023 Masterwork. All Rights Reserved | WordPress Theme by <a
+              href="https://w3layouts.com/">W3Layouts. </a>
+          </p>
+        </div>
+        <div class="columns-2 mt-lg-0 mt-3 FooterSocial">
+          <ul class="social">
+            <li><a href="https://www.facebook.com/w3layouts/">
+                <span class="fa-brands fa-facebook-f" aria-hidden="true"></span></a>
+            </li>
+
+            <li><a href="https://in.linkedin.com/company/w3layouts">
+                <span class="fa-brands fa-linkedin-in" aria-hidden="true"></span></a>
+            </li>
+
+            <li><a href="https://twitter.com/W3layouts">
+                <span class="fa-brands fa-twitter" aria-hidden="true"></span></a>
+            </li>
+
+            <li><a href="https://google.com/W3layouts">
+                <span class="fa-brands fa-google-plus-g" aria-hidden="true"></span></a>
+            </li>
+
+            <li><a href="https://github.com/W3layouts">
+                <span class="fa-brands fa-github" aria-hidden="true"></span></a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- //footer -->
+  </footer>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- slick carousel  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function () {
+      $(".services_content").slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+      });
+    });
+  </script>
+
+  <!-- FANCYBOX JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+  <script>
+    // tìm đến các thẻ html có thuộc tính data-fancybox và gắn hiệu ứng popup khi click
+    Fancybox.bind("[data-fancybox]", {
+      // Your custom options
+    });
+  </script>
+
+  <!-- WAYPOINTS (hỗ trợ cho count up) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- COUNTUP -->
+  <script src="./js/jquery.countup.min.js"></script>
+
+  <script>
+    // Tìm đến các thẻ có class tên counter và gắn hiệu ứng countUp cho các thẻ đó
+    $('.counter').countUp();
+  </script>
+
+  <!--BS4 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+  <!-- !Back to top -->
+  <script src="./js/main.js"></script>
+  <script src="./js/util.js"></script>
+
+</body>
+
+</html>
